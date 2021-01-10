@@ -1,14 +1,8 @@
 body {
-  background-image: linear-gradient(45deg, #e92705, #b90eb0);
-  background-size: 300% 300%;
-  animation: Gradient 10s ease infinite;
   text-align: center;
   padding-bottom: 15px;
   color: azure;
   font-family: "Roboto", sans-serif;
-}
-
-
 }
 
 @-webkit-keyframes Gradient {
@@ -34,10 +28,13 @@ nav {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.nav-item a{
+iframe {
+  border-radius: 20px;
+}
+
+.nav-item a {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
@@ -94,24 +91,50 @@ nav {
   font-size: 50px;
   padding-top: 15px;
 }
+.instructions {
+  list-style: none;
+}
+
+.footBar {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #startBtn {
+  border: azure;
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: azure;
+  color: #e9056f;
   font-size: 25px;
   text-transform: uppercase;
 }
-
 #PomoSection {
   height: 100vh;
+  background-image: linear-gradient(45deg, #e92705, #b90eb0);
+  background-size: 300% 300%;
+  animation: Gradient 10s ease infinite;
 }
+
 #explainSection {
-  background-color: hsla(37, 100%, 92%, 0.438);
+  background-color: hsl(0, 0%, 100%);
   padding-bottom: 15px;
-  border-radius: 20px;
-  max-height: 30vh;
-  min-height: 350px;
-  max-width: 100vw;
-  min-width: 80vw;
+  height: 100vh;
+  width: 100vw;
   display: inline-block;
+  color: #e9056f;
+}
+
+#explainBox {
+  max-width: 500px;
+  display: inline-block;
+}
+
+#explainTitle {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* #navBar {
@@ -123,18 +146,3 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 } */
-
-#footer {
-  margin-bottom: -50px;
-  vertical-align: bottom;
-  position: absolute;
-  padding-top: 20px;
-}
-
-#startBtn {
-  border: azure;
-  height: 45px;
-  width: 200px;
-  border-radius: 5px;
-  background-color: azure;
-  color: #e9056f;
