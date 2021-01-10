@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(TIME) - Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="PomoSection">
+      <nav id="navBar" class="navBar">
+        <img class="logo" id="headerLogo" src="CaeLogo.png" />
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#">Analytics</a></li>
+          <li class="nav-item"><a href="#">Settings</a></li>
+          <li class="nav-item"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div class="spacer"></div>
+      <div class="mainBox" id="contentBox">
+        <button id="ButtonClass1" class="btnClass" href="">Pomodoro</button>
+        <button id="ButtonClass2" class="btnClass" href="">Short Break</button>
+        <button id="ButtonClass3" class="btnClass" href="">Long Break</button>
+        <div id="timer" class="Timer">
+          <h1 id="minsTimer" class="minutes">25</h1>
+          <h1>:</h1>
+          <h1 id="secssTimer" class="seconds">00</h1>
+        </div>
+        <button id="startBtn" class="btn btn--Start">Start</button>
+      </div>
+
+      <div class="taskBoxHeader" id="taskBox">
+        <h2>Tasks</h2>
+      </div>
+      <div class="taskBox" id="taskBox">
+        <h3>Task 1</h3>
+        <h3>Task 2</h3>
+        <h3>Task 3</h3>
+        <h3>Task 4</h3>
+        <h3>Task 5</h3>
+      </div>
+    </div>
+    <div id="explainSection">
+      <h1>This Pomodoro Timer will help you revise.</h1>
+    </div>
+  </body>
+</html>
