@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>(TIME) - Pomodoro Timer</title>
+    <title class="titleDisplay">Pomodoro by Cae 🤓</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/127c01f16d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -19,13 +23,10 @@
       </nav>
       <div class="spacer"></div>
       <div class="mainBox" id="contentBox">
-        <button id="ButtonClass1" class="btnClass" href="">Pomodoro</button>
-        <button id="ButtonClass2" class="btnClass" href="">Short Break</button>
-        <button id="ButtonClass3" class="btnClass" href="">Long Break</button>
+        <h3>Time to work!</h3>
         <div id="timer" class="Timer">
-          <h1 id="minsTimer" class="minutes">25</h1>
-          <h1>:</h1>
-          <h1 id="secssTimer" class="seconds">00</h1>
+          <h1 id="displayTimer" class="displayTimer">25:00</h1>
+          <h3 class="timeLeft" id="timeLeft"></h3>
         </div>
         <button id="startBtn" class="btn btn--Start">Start</button>
       </div>
@@ -44,16 +45,7 @@
     <div id="explainSection">
       <div id="explainBox">
         <h1 id="explainTitle">This Pomodoro Timer will help you revise.</h1>
-
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/D-DMmIqigqo"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
+        <br />
         <h2>What is a Pomodoro Timer?</h2>
         <p>
           A Pomodoro Timer is a method of working & studying productively
@@ -90,9 +82,15 @@
           thank you for using my Pomodoro Timer. It's great isn't it? I
           originally made this to help me focus and work more effectively during
           my early coding (and flying) days! I just wanted to add that 100% of
-          the profits from premium go towards TeachTheKingdom, a charity based
-          in the UK that helps kids have everything they need for a great day at
-          school. Happy studying fellow nerds! :)
+          the profits from premium go towards TeachTheKingdom, a charity that
+          helps kids all over the world have everything they need for a great
+          day at school. Happy studying fellow nerds! 🤓
+        </p>
+        <br />
+        <p>
+          <strong
+            >This is a domestic abuse safe space. Need help? Click here</strong
+          >
         </p>
         <br />
         <br />
@@ -101,15 +99,33 @@
             <li class="contact">Contact Us</li>
             <li class="support">Support</li>
             <li class="Privacy">Privacy</li>
-            <li class="Home">Home</li>
+            <li class="Home">Updates</li>
           </ul>
           <p>
             Made lovingly by
             <a href="https://www.caeroberts.github.io">Cae Roberts </a> ❤️
           </p>
+          <div id="socialSection">
+            <li>
+              <a class="socials" href="https://github.com/CaeRoberts">
+                <i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a class="socials" href="https://www.instagram.com/caeeroberts"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a class="socials" href="https://caeroberts.com/"
+                ><i class="fa fa-rss-square" aria-hidden="true"></i
+              ></a>
+            </li>
+          </div>
           <p>Pomo-Pass All Rights Reserved</p>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
