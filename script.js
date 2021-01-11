@@ -68,5 +68,6 @@ function displayEndTime(timestamp) {
 /////////////////////
 
 startBtn.addEventListener("click", function () {
-  timer(1500);
+  timer(timerSettings.study * 60);
+  startBtn.textContent = `Pause`;
 });
