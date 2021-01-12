@@ -130,12 +130,49 @@ iframe {
   color: #e9056f;
   font-size: 25px;
   text-transform: uppercase;
+  display: inline;
 }
+
+#pauseBtn {
+  border: azure;
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: azure;
+  color: #e9056f;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: none;
+}
+#resumeBtn {
+  border: azure;
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: azure;
+  color: #e9056f;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: none;
+}
+#startBtn2 {
+  border: azure;
+  height: 45px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: azure;
+  color: #e9056f;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: none;
+}
+
 #PomoSection {
   height: 100vh;
   background-image: linear-gradient(45deg, #e92705, #b90eb0);
   background-size: 300% 300%;
   animation: Gradient 10s ease infinite;
+  display: block;
 }
 
 #explainSection {
