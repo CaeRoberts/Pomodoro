@@ -40,7 +40,96 @@ iframe {
   height: 255px;
 }
 
-.nav-item a {
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2vh;
+  border: none;
+  background: white;
+  margin: 0;
+}
+
+form button {
+  color: #e9056f;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: white;
+  background: #e9056f;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-input {
+  flex: 1;
+  width: 275px;
+  padding: 0.5rem;
+  font-size: 2vh;
+  margin: 0;
+}
+
+.todo li {
+  flex: 1;
+  width: 250px;
+  padding: 0.5rem;
+  font-size: 2vh;
+  border: none;
+  background: white;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #e9056f;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+/* .complete-btn {
+  background: #92e905;
+}
+*/
+.trash-btn {
+  background: #e92705;
+}
+.todo-button {
+  color: #e9056f;
+}
+
+/* .todo-item {
+  padding: 01rem 0.5rem;
+} */
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+fa .nav-item a {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
@@ -52,11 +141,11 @@ iframe {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 200px;
 }
 
 .spacer {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .btn {
   border: none;
@@ -66,7 +155,7 @@ iframe {
   background-color: hsla(37, 100%, 92%, 0.438);
   padding-bottom: 15px;
   border-radius: 20px;
-  max-height: 40vh;
+  max-height: fit;
   min-height: 350px;
   max-width: fit-content;
   min-width: 450px;
@@ -77,11 +166,12 @@ iframe {
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 20px;
-  max-height: 30vh;
+  /* max-height: 30vh; */
   min-height: fit-content;
   max-width: fit-content;
   min-width: 450px;
   display: inline-block;
+  margin-bottom: 60px;
 }
 
 .btnClass {
@@ -168,7 +258,8 @@ iframe {
 }
 
 #PomoSection {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: fit-content;
   background-image: linear-gradient(45deg, #e92705, #b90eb0);
   background-size: 300% 300%;
   animation: Gradient 10s ease infinite;
@@ -196,4 +287,5 @@ iframe {
 
 #navBar {
   padding-top: 50px;
+  justify-content: center;
 }

@@ -9,17 +9,18 @@
       src="https://kit.fontawesome.com/127c01f16d.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <div id="PomoSection" class="Pomosection">
       <nav id="navBar" class="navBar">
         <img class="logo" id="headerLogo" src="CaeLogo.png" />
-        <ul class="nav-links">
-          <li class="nav-item"><a href="#">Analytics</a></li>
-          <li class="nav-item"><a href="#">Settings</a></li>
-          <li class="nav-item"><a href="#">Login</a></li>
-        </ul>
       </nav>
       <div class="spacer"></div>
       <div class="mainBox" id="contentBox">
@@ -35,14 +36,21 @@
       </div>
 
       <div class="taskBoxHeader" id="taskBox">
-        <h2>Tasks</h2>
+        <h2>To do list</h2>
       </div>
       <div class="taskBox" id="taskBox">
-        <h3>Task 1</h3>
-        <h3>Task 2</h3>
-        <h3>Task 3</h3>
-        <h3>Task 4</h3>
-        <h3>Task 5</h3>
+        <br />
+        <form>
+          <input type="text" class="todo-input" /><button
+            class="todo-button"
+            type="submit"
+          >
+            <i class="fas fa-plus-square"></i>
+          </button>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list"></ul>
+        </div>
       </div>
     </div>
     <div id="explainSection">
@@ -62,7 +70,7 @@
 
         <h2>Instructions</h2>
         <ul class="instructions">
-          <li class="instructionItems">1. Add tasks to the Gantt chart</li>
+          <li class="instructionItems">1. Add tasks to the to do list</li>
           <li class="instructionItems">
             2. Set timers based on the duration of work required (estimate it if
             you don't know!)
@@ -92,18 +100,21 @@
         <br />
         <p>
           <strong
-            >This is a domestic abuse safe space. Need help? Click here</strong
+            >This is a domestic abuse safe space. Need help?
+            <a href="https://www.nationaldahelpline.org.uk/"
+              >Click here</a
+            ></strong
           >
         </p>
         <br />
         <br />
         <div class="footer">
-          <ul class="footBar">
+          <!-- <ul class="footBar">
             <li class="contact">Contact Us</li>
             <li class="support">Support</li>
             <li class="Privacy">Privacy</li>
             <li class="Home">Updates</li>
-          </ul>
+          </ul> -->
           <p>
             Made lovingly by
             <a href="https://www.caeroberts.github.io">Cae Roberts </a> ❤️
@@ -125,7 +136,6 @@
               ></a>
             </li>
           </div>
-          <p>Pomo-Pass All Rights Reserved</p>
         </div>
       </div>
     </div>
